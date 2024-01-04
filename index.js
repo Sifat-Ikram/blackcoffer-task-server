@@ -5,7 +5,9 @@ const cors = require("cors");
 const port = process.env.PORT || 4321;
 
 // middleware
-app.use(cors());
+app.use(cors({
+  origin: ['blackcoffer-task-51d14.web.app', 'blackcoffer-task-51d14.firebaseapp.com']
+}));
 app.use(express.json());
 
 
